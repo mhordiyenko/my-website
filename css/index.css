@@ -1,141 +1,227 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
-
-:root {
-    font-family: 'Karla', sans-serif;
-    color: white;
-}
-
 body{
     max-width: 1280px;
     margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    color:  white;
     background-color: #011028;
-}
-
-div.header-info-text{
-     background-image: url("../img/header.jpg");
-     background-position: center;
-     background-size: cover;
-     height: 600px;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-end;
-    /* align-self: flex-end; як знести вниз */
-     
-    
 }
 
 header nav{
     display: flex;
-    margin-top: 5px;
+    margin: 5px 10px;
+    
+    
 }
+
 header nav a img{
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 5px;
+    width: 150px;
+    height: 40px;
 }
+
 header nav ul{
     display: flex;
     flex: 1;
+    padding: 0;
+    margin-bottom: 3px;
     
 }
+
 header nav ul li{
     list-style-type: none;
-    margin-right: 1%;
-}
-header nav ul li:last-child{
-    margin-left: auto;
+    margin-right: 2%;
 }
 header nav ul li a{
     text-decoration: none;
     color: white;
+} 
+header nav ul li a:hover{
+    text-decoration: blink;
+    color: #FEC600;
 }
-header nav ul li a:hover {
-    text-decoration: underline;
-    color:#FFC600;
+header nav ul li:last-child {
+    margin-left: auto;
+    margin-right: 0;
 }
 header nav ul li button{
     height: 40px;
-    margin-top: -10px;
     background-color: #ff3f05;
     border-style: none;
     border-radius: 5px;
-    
+    margin-top: -10px;
 }
-.header-info-text p{
-    text-align: right;
-    margin-right: 20px;
-}
-.fest-specifics{
-     background-image: url("../img/short_info_page.jpg");
-     background-position: center;
-     background-size: cover;
-     height: 600px;
-     width: 100%;
+header nav ul li button:hover{
+    background-color: #ffbc05;
 }
 
-.fest-specifics article img{
-    height: 200px;
-    width: 200px;
+.header-info-text{
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.each-one{
+.header-info-text div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-.fest-specifics {
-    margin: 0 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-}
-@media screen and (max-width: 560px) {
-    .fest-specifics {
-        grid-template-columns: 1fr;
-        align-items: ;
-    }
+    text-align: right;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    font-size: 26px;
 }
 
-.bands img{
-   width: 100%;
-   height: 100%;
-}
-footer{
-    background-image: url("../img/footer.png"); 
+.fest-specifics{
+    background-image: url(../img/short_info_page.jpg);
     background-position: center;
-     background-size: cover;
-     height: 420px;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 720px;
+}
+
+
+.each-specific{
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    
+}
+.each-specific p{
+    text-align: center;
+    font-size: 20px;
 }
 
 .big-show{
-    background-image: url("../img/big-show.jpg"); 
+    background-image: url(../img/big-show.jpg);
     background-position: center;
-     background-size: cover;
-     height: 600px;
-    
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 720px;
+    margin: 3px auto;
+}
+
+.big-show p{
+    align-self: flex-start;
+    margin-top: 90px;
+    font-size: 21px;
+    text-align: justify;
+    line-height: 1.5;
+    width: 500px;
+}
+
+.big-show #h-big-show{
+    align-self: flex-end;
+    margin-bottom: 70px;
+    font-size: 32px;
 }
 .beauty-nature{
-    background-image: url("../img/forest.jpg"); 
+    background-image: url(../img/forest.jpg);
     background-position: center;
-     background-size: cover;
-     height: 600px;
-    
+    background-size: cover;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 720px;
+    margin: 3px auto;
 }
-.contact-part article form label{
+
+.beauty-nature p{
+    align-self: flex-start;
+    margin-top: 90px;
+    font-size: 21px;
+    text-align: justify;
+    line-height: 1.5;
+    width: 500px;
+   /* padding: 30px 20px;*/
+}
+
+.beauty-nature #h-beauty-nature{
+    align-self: flex-end;
+    margin-bottom: 70px;
+    font-size: 32px;
+}
+
+.contacts .h-contacts-and-links{
+    margin: 0 auto 10px;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-part article{
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.response-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.response-form label{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-    
-}
-.contact-part article form label input{
-    width: 600px;
-    margin: 0 15px 0 10px;
 }
 
-
-.contact-part {
-    display: flex;
+.response-form label input{
+    width: 100%;
+    height: 30px;
 }
-.contact-part article{
+
+.map{
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.social-web-pages .h-contacts-and-links{
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    flex: 1;
+    padding: 0;
+    margin-bottom: 3px;
+    justify-content: center;
+    
+}
+
+.links a{
+    margin-right: 3%;
+    
+}
+.m-footer{
+    position: absolute;
+}
+.m-footer img{
+    width: 100%;
+    height: 100%;
 }
