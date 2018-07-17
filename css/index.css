@@ -4,12 +4,14 @@ body{
     margin: auto;
     font-family: 'Titillium Web', sans-serif;
     color:  white;
-    background-color: #011028;
+    background-color: /*#292929;*/ #011028;
 }
 
 header nav{
     display: flex;
-    margin: 5px 10px;
+    padding: 5px 10px;
+    background: linear-gradient(to bottom, #011028 30%, #14191a 70%);
+    box-shadow: inset 0 0 20px #000;
 }
 
 header nav a img{
@@ -61,6 +63,7 @@ header nav ul li button:hover{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    box-shadow: inset 0 0 20px #000;
 }
 
 .header-info-text div{
@@ -74,7 +77,9 @@ header nav ul li button:hover{
 
 .bands{
     text-align: center;
-    
+    color: white;
+    background: linear-gradient(to bottom, #011028 30%, #14191a 70%);
+    box-shadow: inset 0 0 20px #000;
 }
 .bands article{
     margin-top: 15px;
@@ -99,20 +104,37 @@ header nav ul li button:hover{
     background-image: url(../img/short_info_page.jpg);
     background-position: center;
     background-size: cover;
-    height: 700px;
-    
+    height: 640px;
+    box-shadow: inset 0 0 20px #000;
 }
 .fest-specifics{
     text-align: center;
+    
 }
 
 .fest-specifics article{
     display: inline-block;
-    margin-top: 20px;
-    border-style: groove;
+    margin-top: 200px;
+    /*border-style: groove;
+    border-color: grey; */
+    box-shadow: inset 0 0 20px #000;
     border-radius: 5px;
     width: 250px;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 761px) {
+    .fest-specifics article{
+        display: inline-block;
+        margin-top: 80px;
+        /*border-style: groove;
+        border-color: grey; */
+        box-shadow: inset 0 0 20px #000;
+        border-radius: 5px;
+        width: 251px;
+        vertical-align: middle;
+    }
+    
 }
 
 .fest-specifics article img{
@@ -126,8 +148,9 @@ header nav ul li button:hover{
     background-image: url(../img/big-show.jpg);
     background-position: center;
     background-size: cover;
-    height: 720px;
+    height: 635px;
     display: block;
+    box-shadow: inset 0 0 30px #000;
 }
 
 .big-show p{
@@ -136,12 +159,13 @@ header nav ul li button:hover{
     font-size: 21px;
     text-align: justify;
     margin:auto;
-    padding-top:60px;
+    padding-top:90px;
 }
 .big-show #h-big-show{
     float:right;
     font-size: 32px;
-    margin-right:20px;
+    margin-right:40px;
+    margin-top: 220px;
 }
 
 
@@ -150,8 +174,9 @@ header nav ul li button:hover{
     background-position: center;
     background-size: cover;
     align-items: center;
-    height: 720px;
+    height: 642px;
     display: block;
+    box-shadow: inset 0 0 30px #000;
 }
 
 .beauty-nature p{
@@ -160,22 +185,24 @@ header nav ul li button:hover{
     font-size: 21px;
     text-align: justify;
     margin:auto;
-    padding-top:60px;
+    padding-top:90px;
 }
 
 .beauty-nature #h-beauty-nature{
     float: left;
     font-size: 32px;
-    margin-left:20px;
+    margin-left:40px;
+    margin-top: 220px;
     }
 
 
 .contact-part{
     text-align: center;
 }
- .contacts{
-    text-align: center; 
- }
+
+.contacts{
+    text-align: center;
+}
 
 .contact-part article{
     display: inline-block;
@@ -191,12 +218,12 @@ header nav ul li button:hover{
     width: 500px;
     height: 30px;
     border-radius: 5px;
-    
 }
 
 .contact-part article form input:hover{
     border-style: groove;
 }
+
 .contact-part article form input[type="submit"]{
     width: 150px;
     margin-left: auto;
@@ -211,27 +238,35 @@ header nav ul li button:hover{
     background-color: #ffbc05;
 }
 .contact-part article iframe{
-    height: 256px;
+    height: 300px;
     width: 500px;
     margin-top: 20px;
 }
 
-.social-web-pages .h-contacts-and-links{
+.h-contacts-and-links{
     margin: 0 auto;
     font-size: 26px;
     line-height: 60px;
     text-align: center;
     font-weight: bold;
+    
 }
 
 
 .social-web-pages{
     text-align: center;
+    border-top-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+.shadow{
+    background: linear-gradient(to bottom, #011028 30%, #14191a 70%);
+    box-shadow: inset 0 0 20px #000;
 }
 
 .social-web-pages .links img{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     margin: 0 20px;
 }
 
@@ -244,5 +279,7 @@ header nav ul li button:hover{
     width: 100%;
     height: 430px;
     background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 20px #000;
     
 }
