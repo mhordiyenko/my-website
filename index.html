@@ -13,19 +13,19 @@
     <header>
         <nav>
             <a href = "index.html">
-                <img  src="img/zaxid-logo.svg" alt="Zaxid Logo" >
+                <img  src="img/zaxid-logo.svg" alt="Zaxid Logo" class = "wew slideInLeft">
             </a>
             <ul>
-                <li><a class = "smooth" href = "#bands" >Учасники</a></li>
-                <li><a class = "smooth" href = "#aboutus">Про нас</a></li>
-                <li><a class = "smooth" href = "#contacts">Контакти</a></li>
-                <li><button>Придбати квиток</button></li>
+                <li class = "wew slideInDown"><a class = "smooth" href = "#bands" >Учасники</a></li>
+                <li class = "wew slideInDown"><a class = "smooth" href = "#aboutus">Про нас</a></li>
+                <li class = "wew slideInDown"><a class = "smooth" href = "#contacts">Контакти</a></li>
+                <li><button class = "wew slideInRight">Придбати квиток</button></li>
             </ul>
             
         </nav>
         
        <div class="header-info-text">
-            <div class = "wew pulse">
+            <div>
                 <p><b>24-26 СЕРПНЯ</b></p>
                 <p><b>с. Родатичі, Чарівна Долина</b></p>
             </div>
@@ -34,55 +34,63 @@
     <main>
         <div id="bands" class = "bands">
            <article>
-               <img src ="img/adam-gotnier.jpg"  alt="adam-gotnier" >
+               <img src ="img/-adam-gotnier.jpg"  alt="adam-gotnier" class="wew flipInX" data-wew-offset="0.6">
                <p>Adam Gotnier</p>
            </article>
            <article>
-            <img src = "img/butter.jpg" alt ="butter">
+            <img src = "img/-butter.jpg" alt ="butter"class="wew flipInX" data-wew-offset="0.6">
             <p>We Butter The Bread With Butter</p>
             </article>
            <article>
-               <img src = "img/guano-apes.jpg" alt ="guano apes">
+               <img src = "img/-guano-apes.jpg" alt ="guano apes" class="wew flipInX" data-wew-offset="0.6">
             <p>Guano Apes</p>
            </article>
            <article>
-               <img src = "img/sepultura.jpg" alt ="Sepultura">
+               <img src = "img/-sepultura.jpg" alt ="Sepultura" class="wew flipInX" data-wew-offset="0.6">
             <p>Sepultura</p>
+           </article>
+           <article>
+               <img src = "img/-therion.jpg" alt ="Therion" class="wew flipInX" data-wew-offset="0.6">
+            <p>Therion</p>
+           </article>
+           <article>
+               <img src = "img/-bullet-for-my-valentine.jpg" alt ="Bullet For My Valentine" class="wew flipInX" data-wew-offset="0.6">
+            <p>Bullet For My Valentine</p>
            </article>
       </div>
          <section id ="aboutus">
             <div class = "fest-specifics">
                 <article class="each-specific">
-                    <img src="img/calendar.png" alt = "calendar"/>
+                    <img src="img/calendar.png" alt = "calendar" class ="wew bounceInDown" data-wew-offset="0.8">
                     <p>3 фестивальні дні</p>
                 </article>
                 <article class="each-specific">
-                    <img src="img/stages.png" alt = "stages"/>
+                    <img src="img/stages.png" alt = "stages" class ="wew bounceInDown" data-wew-offset="0.8">
                     <p>4 сцени</p>
                 </article>
                 <article class="each-specific">
-                    <img src="img/bands.png" alt = "bands"/>
+                    <img src="img/bands.png" alt = "bands" class ="wew bounceInDown" data-wew-offset="0.8">
                     <p>Понад 50 Виконавців</p>
                 </article>
             </div>
         </section>
         <section  class = "big-show">
-            <p class="wew bounceInDown">Немає значення, які в тебе музичні вподобання. В нас
+            <p class="wew zoomIn" data-wew-offset="0.8">Немає значення, які в тебе музичні вподобання. В нас
             знайдеться музика для кожного! Сцени, що працюють
             одночасно і незалежно одна від одної, будуть дарувати
             максимальний заряд емоціями у режимі нон-стоп!
             Тебе очікує неймовірний драйв, відривайся на повну,
             адже саме для цього ти прямуєш на Західфест!  </p>
-            <h1 id = "h-big-show">Вражаюче Шоу</h1>
+            <h1 id = "h-big-show" class = "wew bounceInLeft">Вражаюче Шоу</h1>
         </section>
         <section id = "beauty-nature" class = "beauty-nature">
-            <p>Чи десь відпочивалось тобі краще, ніж на природі? Ліси
+            <p class="wew zoomIn" data-wew-offset="0.8">Чи десь відпочивалось тобі краще, ніж на природі? Ліси
                 та озера тебе чекають, зорб без тебе нікуди не
                 покотиться, канатна переправа не зрушить з місця.
                 Ночівля в "готелі під тисячами зір" в наметовому містечку
                 забезпечить незабутні спогади.
                 Відчуй єдність і справжність себе та простору!  </p>
-            <h1 id ="h-beauty-nature">Неймовірна природа</h1>
+            <h1 id ="h-beauty-nature" class = "wew bounceInRight">Неймовірна природа</h1>
         </section>
         <section class = "shadow">
             <section id = "contacts" class ="contacts">
@@ -90,7 +98,7 @@
                 <div class = "contact-part">
                     <h2 class = "h-contacts-and-links">Контакти</h2>
                     <article>
-                        <form class="response-form">
+                        <form class="response-form" method="POST"  action="https://formspree.io/markhordi@gmail.com">
                        <label>Ваше Ім'я:
                            <input type="text" name="user-name" placeholder = "Ваше Ім'я" required>
                        </label>
@@ -116,7 +124,7 @@
                     <h2 class = "h-contacts-and-links">Ми в соціальних мережах</h2>
                         <div class = "links">
                             <a href="https://www.youtube.com/user/Matvijchuk">
-                                <img src="img/youtube.png" alt="youtube" class = " wew animated infinite pulse">
+                                <img src="img/youtube.png" alt="youtube" class = "wew animated infinite pulse">
                             </a>
                             <a href = "https://www.instagram.com/zaxidfest_official/">
                                 <img src="img/instagram.svg" alt="instagram" class = "wew animated infinite pulse">
@@ -134,8 +142,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="js/dist/wew.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/dist/wew.min.js"></script>
+    
 </body>
 </html>
